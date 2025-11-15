@@ -1,9 +1,10 @@
-import Home from "./pages/home/Home";
+import { BrowserRouter } from "react-router-dom";
+import MainRouter from "./router/MainRouter/MainRouter.jsx";
 
-function App() {
-	return (
-    <Home></Home>
-	);
+export default function App() {
+  return (
+    <BrowserRouter>
+      <MainRouter />
+    </BrowserRouter>
+  );
 }
-
-export default App;
